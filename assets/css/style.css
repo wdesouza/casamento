@@ -11,14 +11,14 @@
 }
 
 :root {
-  --color-bg:       #faf8f5;
-  --color-surface:  #ffffff;
-  --color-text:     #2b2b2b;
-  --color-muted:    #7a7469;
-  --color-accent:   #9b8e7e;   /* sage/taupe */
-  --color-accent-h: #7a6d5e;   /* hover */
-  --color-border:   #e8e3db;
-  --color-tag:      #f0ece5;
+  --color-bg:       #f7f5ef;
+  --color-surface:  #fdfcf8;
+  --color-text:     #2a2824;
+  --color-muted:    #7a7668;
+  --color-accent:   #6b7334;   /* verde oliva do convite */
+  --color-accent-h: #545c28;   /* hover */
+  --color-border:   #e2ddd3;
+  --color-tag:      #eeeade;
 
   --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-serif: Georgia, "Times New Roman", serif;
