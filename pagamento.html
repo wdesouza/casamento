@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento PIX — Ana Carolina &amp; Welliton</title>
+  <meta name="description" content="Realize seu presente via PIX para o casamento de Ana Carolina e Welliton." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Navegação -->
+  <nav class="nav" aria-label="Navegação principal">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand">AC &amp; W</a>
+      <ul class="nav__links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="como-chegar.html">Como Chegar</a></li>
+        <li><a href="presentes.html">Presentes</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Cabeçalho da página -->
+    <header class="page-header">
+      <h1 class="page-header__title">Pagamento via PIX</h1>
+      <p class="page-header__sub">
+        Escaneie o QR Code ou copie a chave PIX abaixo.
+      </p>
+    </header>
+
+    <!-- Card de pagamento -->
+    <section class="payment-section">
+      <div class="payment-card">
+
+        <!-- Info do presente selecionado -->
+        <div class="payment-info" id="payment-info" aria-live="polite">
+          <!-- preenchido por pagamento.js -->
+        </div>
+
+        <!-- QR Code -->
+        <div class="qr-wrapper" aria-label="QR Code PIX">
+          <div id="qrcode"></div>
+        </div>
+
+        <!-- Chave PIX copia e cola -->
+        <p class="pix-label">PIX Copia e Cola</p>
+        <div class="pix-copy-row">
+          <input
+            type="text"
+            id="pix-string"
+            readonly
+            aria-label="Código PIX para copiar"
+            title="Código PIX — clique em Copiar para usar"
+          />
+          <button class="btn btn-primary" id="copy-btn" type="button">
+            Copiar
+          </button>
+        </div>
+        <span id="copy-feedback" role="status" aria-live="polite"></span>
+
+        <!-- Voltar -->
+        <p class="payment-back">
+          ← <a href="presentes.html">Voltar para a lista de presentes</a>
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p class="footer__text">
+      Feito com <span class="footer__heart" aria-label="amor">♥</span> para o nosso grande dia<br />
+      08 de novembro de 2026 &mdash; Chácara 5 Irmãos, Louveira &mdash; SP
+    </p>
+  </footer>
+
+  <script src="assets/js/qrcode.min.js"></script>
+  <script src="config.js"></script>
+  <script src="assets/js/pix.js"></script>
+  <script src="assets/js/pagamento.js"></script>
+
+</body>
+</html>

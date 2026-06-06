@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Fundo -->
+  <rect width="400" height="300" fill="#f0ece5"/>
+
+  <!-- Caixa de presente (corpo) -->
+  <rect x="130" y="145" width="140" height="110" rx="6" ry="6" fill="#d6cec4"/>
+  <!-- Tampa -->
+  <rect x="118" y="125" width="164" height="28" rx="4" ry="4" fill="#c4bab0"/>
+  <!-- Faixa vertical -->
+  <rect x="186" y="125" width="28" height="130" fill="#b0a496"/>
+  <!-- Faixa horizontal na tampa -->
+  <rect x="118" y="135" width="164" height="8" fill="#b0a496"/>
+
+  <!-- Laço — arco esquerdo -->
+  <ellipse cx="186" cy="118" rx="30" ry="18" fill="none" stroke="#9b8e7e" stroke-width="10"
+           transform="rotate(-20 186 118)" stroke-linecap="round"/>
+  <!-- Laço — arco direito -->
+  <ellipse cx="214" cy="118" rx="30" ry="18" fill="none" stroke="#9b8e7e" stroke-width="10"
+           transform="rotate(20 214 118)" stroke-linecap="round"/>
+  <!-- Nó central -->
+  <circle cx="200" cy="122" r="10" fill="#9b8e7e"/>
+
+  <!-- Texto -->
+  <text x="200" y="278" font-family="Georgia, serif" font-size="13" fill="#7a7469"
+        text-anchor="middle" letter-spacing="2">imagem do presente</text>
+</svg>
