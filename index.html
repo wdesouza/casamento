@@ -9,45 +9,52 @@
 </head>
 <body>
 
-  <!-- Navegação -->
   <nav class="nav" aria-label="Navegação principal">
-    <div class="container nav__inner">
-      <span class="nav__brand">AC &amp; W</span>
+    <div class="nav__inner">
       <ul class="nav__links">
-        <li><a href="index.html" class="active" aria-current="page">Início</a></li>
-        <li><a href="informacoes.html">Informações</a></li>
+        <li><a href="index.html" class="active" aria-current="page">Inicio</a></li>
         <li><a href="como-chegar.html">Como Chegar</a></li>
+        <li><a href="informacoes.html">Informações</a></li>
         <li><a href="presentes.html">Presentes</a></li>
       </ul>
     </div>
   </nav>
 
   <main>
-    <!-- Hero -->
+
+    <!-- Seção 1: Hero -->
     <section class="hero" aria-labelledby="hero-names">
-      <p class="hero__eyebrow">Você está convidado</p>
 
-      <h1 class="hero__names" id="hero-names">
-        Ana Carolina
-        <span class="hero__ampersand">&amp;</span>
-        Welliton
-      </h1>
+      <div class="hero__image">
+        <img src="assets/images/d54f383f4d6d61585a8a00bed54fc7d7.png" alt="Arranjo floral" />
+      </div>
 
-      <div class="hero__divider" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Casamento de</p>
 
-      <p class="hero__date">08 de novembro de 2026</p>
+        <h1 class="hero__names" id="hero-names">
+          <span class="hero__name-line">Ana Carolina</span>
+          <span class="hero__ampersand">e</span>
+          <span class="hero__name-line">Welliton</span>
+        </h1>
 
-      <a class="hero__location" href="como-chegar.html" aria-label="Ver como chegar">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="2" stroke-linecap="round"
-             stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
-          <circle cx="12" cy="10" r="3"/>
-        </svg>
-        Chácara 5 Irmãos — Louveira, São Paulo
-      </a>
+        <p class="hero__tagline">Contamos com sua presença</p>
 
-      <!-- Contador regressivo -->
+        <a href="informacoes.html" class="hero__date-btn">08 de novembro de 2026</a>
+      </div>
+
+    </section>
+
+    <!-- Seção 2: Faixa escura -->
+    <section class="dark-band">
+      <img class="dark-band__flower" src="assets/images/e758992839e4e26e78a0bee443cef028.png" alt="" aria-hidden="true" />
+      <p class="dark-band__title">Estamos a sua espera</p>
+      <p class="dark-band__sub">Confirme até 01 de setembro</p>
+    </section>
+
+    <!-- Contador regressivo -->
+    <div class="countdown-section">
+      <p class="countdown-section__label">Faltam</p>
       <div class="countdown" id="countdown" aria-label="Contagem regressiva para o casamento">
         <div class="countdown__item">
           <span class="countdown__num" id="cd-days">—</span>
@@ -69,14 +76,10 @@
           <span class="countdown__label">segundos</span>
         </div>
       </div>
+    </div>
 
-      <div class="hero__cta">
-        <a href="presentes.html" class="btn btn-primary">Ver Lista de Presentes</a>
-      </div>
-    </section>
   </main>
 
-  <!-- Rodapé -->
   <footer class="footer">
     <p class="footer__text">
       Feito com <span class="footer__heart" aria-label="amor">♥</span> para o nosso grande dia<br />
@@ -84,35 +87,27 @@
     </p>
   </footer>
 
-  <!-- Contador regressivo -->
   <script>
     (function () {
-      // Data e hora da cerimônia (horário de Brasília, UTC-3)
       var WEDDING = new Date("2026-11-08T16:00:00-03:00");
-
       function pad(n) { return String(n).padStart(2, "0"); }
-
       function tick() {
         var now  = new Date();
         var diff = WEDDING - now;
-
         if (diff <= 0) {
           document.getElementById("countdown").innerHTML =
-            '<p style="font-family:var(--font-serif);font-size:1.4rem;color:var(--color-accent)">Hoje é o grande dia! 🎉</p>';
+            '<p style="font-family:var(--font-script);font-size:2rem;color:var(--color-dark-text)">Hoje é o grande dia!</p>';
           return;
         }
-
         var days  = Math.floor(diff / 864e5);
         var hours = Math.floor((diff % 864e5) / 36e5);
         var mins  = Math.floor((diff % 36e5) / 6e4);
         var secs  = Math.floor((diff % 6e4) / 1e3);
-
         document.getElementById("cd-days").textContent  = days;
         document.getElementById("cd-hours").textContent = pad(hours);
         document.getElementById("cd-min").textContent   = pad(mins);
         document.getElementById("cd-sec").textContent   = pad(secs);
       }
-
       tick();
       setInterval(tick, 1000);
     })();
