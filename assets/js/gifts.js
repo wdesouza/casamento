@@ -26,10 +26,10 @@ const GIFTS = [
   },
   {
     id: 3,
-    titulo: "Presente 3",
-    descricao: "Descrição do presente. Adicione aqui mais detalhes sobre o item.",
-    valor: 450.00,
-    imagem: "assets/img/placeholder.svg",
+    titulo: "Um ano de corte de cabelo para o noivo",
+    descricao: "Um ano de corte de cabelo para o noivo.",
+    valor: 300.00,
+    imagem: "assets/img/corte-cabelo.jpg",
   },
   {
     id: 4,
@@ -51,5 +51,12 @@ const GIFTS = [
     descricao: "Descrição do presente. Adicione aqui mais detalhes sobre o item.",
     valor: 680.00,
     imagem: "assets/img/placeholder.svg",
+  },
+  {
+    id: 7,
+    titulo: "Taxa do Buquê",
+    descricao: "Taxa para a noiva não jogar o buquê para a sua namorada.",
+    valor: 50.00,
+    imagem: "assets/img/buque.jpg",
   },
 ];
