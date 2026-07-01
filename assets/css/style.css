@@ -92,7 +92,7 @@ main { flex: 1; }
 
 .nav__links a {
   font-family: var(--font-ui);
-  font-size: .82rem;
+  font-size: .95rem;
   color: var(--color-muted);
   letter-spacing: .02em;
   font-weight: 400;
@@ -241,6 +241,39 @@ main { flex: 1; }
   text-transform: uppercase;
   color: rgba(254,250,238,.7);
   font-weight: 400;
+}
+
+/* ---------- Gifts CTA ---------- */
+.gifts-cta {
+  text-align: center;
+  padding: 56px 24px;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.gifts-cta__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+.gifts-cta__sub {
+  font-family: var(--font-ui);
+  font-size: .9rem;
+  color: var(--color-muted);
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+.gifts-cta__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* ---------- Countdown ---------- */
@@ -720,7 +753,7 @@ main { flex: 1; }
 @media (max-width: 600px) {
   .nav__inner { padding: 0 20px; }
   .nav__links { gap: 18px; }
-  .nav__links a { font-size: .75rem; }
+  .nav__links a { font-size: .9rem; }
   .hero__content { padding: 32px 20px 48px; gap: 16px; }
   .hero__name-line { font-size: clamp(3rem, 13vw, 4.2rem); }
   .hero__date-btn { padding: 16px 32px; }

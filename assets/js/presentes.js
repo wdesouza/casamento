@@ -34,7 +34,7 @@
     const precoHtml = gift.valorEditavel
       ? `<p class="gift-price">Você escolhe o valor</p>`
       : `<p class="gift-price">${brl.format(gift.valor)}</p>`;
-    const botaoLabel = gift.valorEditavel ? "Presentear" : "Comprar";
+    const botaoLabel = "Presentear";
 
     card.innerHTML = `
       <div class="gift-img-wrap">
